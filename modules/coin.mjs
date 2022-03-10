@@ -14,9 +14,17 @@
  * 
  */
 
-function coinFlip() {
-
+export function coinFlip() {
+  let result = Math.random();
+  if (result < 0.5) {
+    result = "heads";
+  } else {
+    result = "tails";
+  }
+  return result;
 }
+// export { coinFlip };
+//console.log(coinFlip());
 
 /** Multiple coin flips
  * 
