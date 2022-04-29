@@ -24,7 +24,7 @@ export function coinFlip() {
   return result;
 }
 // export { coinFlip };
-//console.log(coinFlip());
+// console.log(coinFlip());
 
 /** Multiple coin flips
  * 
@@ -45,9 +45,21 @@ export function coinFlip() {
     ]
  */
 
-function coinFlips(flips) {
-
+export function coinFlips(flips) {
+  let array = new Array(flips);
+  for (let i = 0; i < flips; i++) {
+    let result = Math.random();
+    if (result < 0.5) {
+      result = "heads";
+    } else {
+      result = "tails";
+    }
+    array[i] = result;
+  }
+  return array;
 }
+
+//console.log(coinFlips(10));
 
 /** Count multiple flips
  * 
