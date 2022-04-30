@@ -46,7 +46,7 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-  let array = new Array(flips);
+  let array = [];
   for (let i = 0; i < flips; i++) {
     array.push(coinFlip());
   }
@@ -93,7 +93,7 @@ export function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
+export function flipACoin(call) {
   const result = {call: call, flip: "", result: ""};
   result.flip = coinFlip();
   if (result.call == result.flip) {

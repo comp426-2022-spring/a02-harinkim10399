@@ -19,5 +19,8 @@
     "url": "https://github.com/comp426-2022-spring/a02-harinkim10399/issues"
   },
   "homepage": "https://github.com/comp426-2022-spring/a02-harinkim10399#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "minimist": "^1.2.6"
+  }
 }
